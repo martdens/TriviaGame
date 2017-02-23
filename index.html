@@ -1,0 +1,86 @@
+<DOCTYP HTML>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+     <title>Small Trivia Game</title>
+
+
+       <style type="text/css">
+            .highlight {background-colo:yellow;}
+        </style>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+         link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquery/1.11.4/themes/themes/smoothness/jquery-ui.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.mins.js"></script>
+      
+      <script>
+      $(document).ready(function() {$(#bt1).buttonset();});
+      </script>
+ </head>
+
+ <body>
+  <p id=qst1>What year was the first computer invented</p>
+   
+   <div id="bt1">
+     <input type="radio" id="radio" name="radio"/> <label> A 1927 </label><br />
+     <input type="radio" id="radio" name="radio"/> <label>B 1916 </label><br />
+     <input type="radio" id="radio" name="radio"/> <label>C 1890 </label><br />
+     <input type="radio" id="radio" name="radio"/> <label>D 1946 </label><br />
+     <input type="button" value="Submit Data">
+    <div>
+
+  <p id=qst2>What year was the first TV invented</p> 
+     
+    <div id="bt2">
+     <input type="radio" id="radio" name="radio1"/> <label> A 1933 </label><br />
+     <input type="radio" id="radio" name="radio2"/> <label>B 1927 </label><br />
+     <input type="radio" id="radio" name="radiod3"/> <label>C 1916 </label><br />
+     <input type="radio" id="radio" name="radio4"/> <label>D  1934</label><br />
+     <input type="button" value="Submit Data">
+    <div>
+  
+  <p id=qst3>What year was the first gun invented</p>
+       <div id="bt3">
+     <input type="radio" id="radio" name="radio5"/> <label> A 1210 </label><br />
+     <input type="radio" id="radio" name="radio6"/> <label>B 1364 </label><br />
+     <input type="radio" id="radio" name="radio7"/> <label>C 1429 </label><br />
+     <input type="radio" id="radio" name="radio8"/> <label>D 1550 </label><br />
+     <input type="button" value="Submit Data">
+    <div>
+  
+  <p id=qst4>What year was the first radio invented</p>   	
+        <div id"="bt4">S
+     <input type="radio" id="radio" name="radio8"/> <label> A 1911</label><br />
+     <input type="radio" id="radio" name="radio9"/> <label>B 1908 </label><br />
+     <input type="radio" id="radio" name="radio10"/> <label>C 1895 </label><br />
+     <input type="radio" id="radio" name="radio11"/> <label>D 1871 </label><br />
+     <input type="button" value="Submit Data" onClick="showData();">
+    <div>
+
+<script>
+
+function showData()
+   var trivAns = [];
+   radio.pop($(this.attr("id"));
+   	$('div' input[type=radio]').each(function() {
+   		if($(this).is(":checked")) {
+   			radio.push($this).after('value'));
+           }
+   		});
+   alert();
+   	}
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+ </body>
